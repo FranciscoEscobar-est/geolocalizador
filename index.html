@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Geolocalización</title>
+    <link rel="stylesheet" href="style.css">
+     <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css"
+     integrity="sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY="
+     crossorigin=""/>
+      <!-- Make sure you put this AFTER Leaflet's CSS -->
+     <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"
+     integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo="
+     crossorigin=""></script>
+</head>
+<body>
+    <header>
+        <H1>Geolocalización con leaflet</H1>
+        <h4>Sin claves, sin tarjeta, listo para usar</h4>
+    </header>
+    <div id="botones">
+        <button>obtener mi ubicación</button>
+        <button>copiar coordenadas</button>
+        <button>limpiar marcador</button>
+    </div>
+    <div id="map"></div>
+    <p> </p>
+    <footer>
+        <p></p>
+            <div>Latitud: <code id="lat">—</code> | Longitud: <code id="lng">—</code> | Precisión: <code id="acc">—</code> m</div>
+
+    <p style="margin-top:.75rem">
+
+      Tip: si el permiso es denegado, hacé <b>click en el mapa</b> para poner un marcador manualmente.
+
+    </p>
+
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>
